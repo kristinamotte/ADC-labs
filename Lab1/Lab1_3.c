@@ -17,7 +17,6 @@ int main() {
         for(int j = 0; j < N; j++) {
             secondMatrix[i][j] = firstMatrix[i][i] + firstMatrix[j][j];
         }
-        printf("\n");
     }
 
     for(int i = 0; i < N; i++) {
