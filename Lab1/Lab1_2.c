@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    for(int i = 0; i < deleteSize; i++) {
+    for(int i = 0; i < deleteSize - 1; i++) {
         removeElement(toDelete[i], numbers, size);
     }
 
@@ -42,7 +42,7 @@ int main() {
 }
 
 void removeElement(int pos, double arr[], int size) {
-    for(int i = pos-1; i < size - 1; i++) {
+    for(int i = pos-1; i < size; i++) {
         arr[i] = arr[i + 1];
     }
 
